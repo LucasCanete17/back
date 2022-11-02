@@ -58,7 +58,11 @@ class Usuario {
 
     usuario.countMascotas()
 
-    usuario.addBook({nombre : "Libro 1", autor : "Autor 1"})
+
+    addBook = ({nombre, autor}) =>{
+        this.libros.push({nombre, autor})
+    }
+    usuario.addBook({nombre , autor }) 
         console.log(usuario)
 
     usuario.getBookNames()
